@@ -311,3 +311,20 @@ img {
   border-radius: 8px;
   object-fit: cover;
 }
+.jurnal-foto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.jurnal-foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .jurnal-foto {
+    grid-template-columns: 1fr;
+  }
+}
