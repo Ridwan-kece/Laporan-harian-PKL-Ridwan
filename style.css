@@ -295,3 +295,19 @@ img {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+.jurnal-day {
+  margin-top: 20px;
+}
+
+.jurnal-foto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.jurnal-foto img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
