@@ -328,3 +328,40 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* FOTO JURNAL */
+.jurnal-foto {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.jurnal-foto img {
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.jurnal-foto img:hover {
+  transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
