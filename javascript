@@ -13,3 +13,9 @@ function scrollToMinggu(minggu) {
     row.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 </script>
+function showMinggu(no) {
+  const semuaMinggu = document.querySelectorAll('.minggu');
+  semuaMinggu.forEach(m => m.style.display = 'none');
+
+  document.getElementById('minggu' + no).style.display = 'block';
+}

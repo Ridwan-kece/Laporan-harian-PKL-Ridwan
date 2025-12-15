@@ -269,3 +269,29 @@ img {
   height: auto;
   border: 3px solid red;
 }
+.tab-minggu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.tab-minggu button {
+  padding: 8px 14px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-minggu button:hover {
+  background: #0056b3;
+}
+
+.day {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
