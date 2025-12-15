@@ -35,3 +35,19 @@ function openLightbox(img) {
 document.querySelector(".close").onclick = function () {
   document.getElementById("lightbox").style.display = "none";
 };
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightbox.style.display = "flex";
+  lightboxImg.src = img.src;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const closeBtn = document.querySelector(".close");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      document.getElementById("lightbox").style.display = "none";
+    });
+  }
+});
