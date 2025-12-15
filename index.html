@@ -13,7 +13,7 @@
         <ul>
             <li><a href="#profil-siswa">Profil Siswa</a></li>
             <li><a href="#profil-tempat-pkl">Profil Tempat PKL</a></li>
-            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#jurnal">Kegiatan</a></li>
             <li><a href="#dokumentasi">Dokumentasi</a></li>
             <li><a href="#guru">Guru Pembimbing</a></li>
         </ul>
@@ -104,8 +104,8 @@
 
     <div class="info-block">
         <h3>Waktu Pelaksanaan</h3>
-        <p><strong>Mulai:</strong> — (isi nanti)</p>
-        <p><strong>Selesai:</strong> — (isi nanti)</p>
+        <p><strong>Mulai:</strong> — 15 Desember 2025</p>
+        <p><strong>Selesai:</strong> — 15 Febuari 2026</p>
         <p><strong>Durasi:</strong> — minggu</p>
     </div>
 
@@ -117,49 +117,50 @@
     </div>
 </section>
 
-<div class="jurnal-buttons">
-    <button onclick="scrollToMinggu(1)">Minggu 1</button>
-    <button onclick="scrollToMinggu(2)">Minggu 2</button>
-    <button onclick="scrollToMinggu(3)">Minggu 3</button>
-    <button onclick="scrollToMinggu(4)">Minggu 4</button>
-</div>
+<section id="jurnal" class="card">
+  <h2>Jurnal Mingguan</h2>
 
-<table class="jurnal-table">
-    <thead>
-        <tr>
-            <th>Minggu/Hari</th>
-            <th>Tanggal</th>
-            <th>Kegiatan</th>
-            <th>Catatan</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr id="minggu1">
-            <td>Minggu 1</td>
-            <td>1–5 Desember</td>
-            <td>Observasi lingkungan kerja, pengenalan staf, peraturan perusahaan</td>
-            <td>-</td>
-        </tr>
-        <tr id="minggu2">
-            <td>Minggu 2</td>
-            <td>6–12 Desember</td>
-            <td>Mengerjakan tugas ringan, belajar tools perusahaan</td>
-            <td>-</td>
-        </tr>
-        <tr id="minggu3">
-            <td>Minggu 3</td>
-            <td>13–19 Desember</td>
-            <td>Mengerjakan tugas spesifik, kolaborasi staf</td>
-            <td>-</td>
-        </tr>
-        <tr id="minggu4">
-            <td>Minggu 4</td>
-            <td>20–26 Desember</td>
-            <td>Evaluasi tugas, review hasil kerja</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
+  <!-- TAB MINGGU -->
+  <div class="tab-minggu">
+    <button onclick="showMinggu(1)">Minggu 1</button>
+    <button onclick="showMinggu(2)">Minggu 2</button>
+    <button onclick="showMinggu(3)">Minggu 3</button>
+    <button onclick="showMinggu(4)">Minggu 4</button>
+  </div>
+
+  <!-- MINGGU 1 -->
+  <div class="minggu" id="minggu1">
+    <h3>Minggu 1</h3>
+
+    <div class="day">
+      <h4>Day 1</h4>
+      <p><strong>Tanggal:</strong> 1 Desember 2025</p>
+      <p>
+        Hari pertama PKL di UCIC. Kegiatan diawali dengan diskusi bersama
+        pembimbing lapangan mengenai AI dan IoT serta pembagian kelompok.
+      </p>
+    </div>
+
+    <div class="day">
+      <h4>Day 2</h4>
+      <p>(Belum diisi)</p>
+    </div>
+  </div>
+
+  <!-- MINGGU 2 -->
+  <div class="minggu" id="minggu2" style="display:none;">
+    <h3>Minggu 2</h3>
+    <p>Belum ada kegiatan.</p>
+  </div>
+
+  <div class="minggu" id="minggu3" style="display:none;">
+    <h3>Minggu 3</h3>
+  </div>
+
+  <div class="minggu" id="minggu4" style="display:none;">
+    <h3>Minggu 4</h3>
+  </div>
+</section>
 
 
 <!-- GURU PEMBIMBING -->
