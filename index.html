@@ -158,12 +158,13 @@
 
 
   <div class="jurnal-foto">
-  <img src="img/dokumentasi1.jpg" alt="Dokumentasi PKL Day 1">
-  <img src="img/dokumentasi2.jpg" alt="Dokumentasi PKL Day 1">
-  <img src="img/dokumentasi3.jpg" alt="Dokumentasi PKL Day 1">
+  <img src="img/dokumentasi1.jpg" onclick="openLightbox(this)">
+  <img src="img/dokumentasi2.jpg" onclick="openLightbox(this)">
+  <img src="img/dokumentasi3.jpg" onclick="openLightbox(this)">
 </div>
 
-<div id="lightbox" onclick="closeLightbox()">
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
   <img id="lightbox-img">
 </div>
 
