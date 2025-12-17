@@ -409,45 +409,7 @@ img {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size/* ===== JURNAL FOTO GRID ===== */
-.jurnal-foto {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.jurnal-foto img {
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/* ===== MODAL ===== */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 999;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   cursor: pointer;
 }
-: 40px;
-  color: white;
-  cursor: pointer;
-}
-
