@@ -132,7 +132,7 @@
   <div class="minggu" id="minggu1">
     <h3>Minggu 1</h3>
 
-    <article class="jurnal-day">
+   <article class="jurnal-day" id="day1">
   <h3>Day 1 – Pengenalan, Diskusi & Pembagian Tugas</h3>
   <p class="tanggal">Tanggal: 15 Desember 2025</p>
 
@@ -154,14 +154,41 @@
     Pada hari ini saya mulai melakukan dokumentasi dan perekaman video kegiatan PKL,
     termasuk dokumentasi bersama rekan bernama <strong>Dede Aditia</strong>.
   </p>
+
+  <!-- FOTO GRID 3 KOLOM -->
+  <div class="jurnal-foto" style="
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 5px;
+  ">
+    <img src="img/dokumentasi1.jpg" onclick="openLightbox(this)" alt="Dokumentasi 1" style="
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    ">
+    <img src="img/dokumentasi2.jpg" onclick="openLightbox(this)" alt="Dokumentasi 2" style="
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    ">
+    <img src="img/dokumentasi3.jpg" onclick="openLightbox(this)" alt="Dokumentasi 3" style="
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    ">
+  </div>
 </article>
 
-
-  <div class="jurnal-foto">
-  <img src="img/dokumentasi1.jpg" onclick="openLightbox(this)">
-  <img src="img/dokumentasi2.jpg" onclick="openLightbox(this)">
-  <img src="img/dokumentasi3.jpg" onclick="openLightbox(this)">
-</div>
 
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
