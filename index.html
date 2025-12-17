@@ -9,15 +9,18 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav>
-        <ul>
-            <li><a href="#profil-siswa">Profil Siswa</a></li>
-            <li><a href="#profil-tempat-pkl">Profil Tempat PKL</a></li>
-            <li><a href="#jurnal">Jurnal</a></li>
-            <li><a href="#dokumentasi">Dokumentasi</a></li>
-            <li><a href="#guru">Guru Pembimbing</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+  <div class="logo">Laporan PKL</div>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#profil">Profil Siswa</a></li>
+    <li><a href="#guru">Guru Pembimbing</a></li>
+    <li><a href="#jurnal">Jurnal PKL</a></li>
+    <li><a href="#struktur">Struktur</a></li>
+  </ul>
+</nav>
 
     <!-- PROFIL SISWA -->
     <section id="profil-siswa" class="card">
@@ -158,9 +161,9 @@
 
 
   <div class="jurnal-foto">
-  <img src="img/dokumentasi1.jpg" onclick="openLightbox(this)">
-  <img src="img/dokumentasi2.jpg" onclick="openLightbox(this)">
-  <img src="img/dokumentasi3.jpg" onclick="openLightbox(this)">
+  <img src="img/dokumentasi1.jpg" class="popup-img" alt="">
+  <img src="img/dokumentasi2.jpg" class="popup-img" alt="">
+  <img src="img/dokumentasi3.jpg" class="popup-img" alt="">
 </div>
 
 <div id="lightbox" class="lightbox">
@@ -297,10 +300,9 @@
     }
 </script>
 
-<div id="lightbox" class="lightbox">
+<div id="imageModal" class="modal">
   <span class="close">&times;</span>
-  <img id="lightbox-img">
+  <img class="modal-content" id="modalImg">
 </div>
-    <script src="script.js"></script>
 </body>
 </html>
