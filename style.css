@@ -413,3 +413,36 @@ img {
   color: white;
   cursor: pointer;
 }
+.jurnal-foto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom per row */
+  gap: 10px;                             /* jarak antar foto */
+  padding: 5px;                           /* jarak dari tepi container */
+}
+
+.jurnal-foto img {
+  width: 100%;                            /* lebar mengikuti kolom */
+  height: 200px;                           /* tinggi tiap foto */
+  object-fit: cover;                       /* biar proporsinya tetap rapi */
+  border-radius: 5px;                      /* opsional, biar cantik */
+  cursor: pointer;                         /* efek klik kalau ada lightbox */
+  transition: transform 0.2s;              /* efek zoom ringan saat hover */
+}
+
+.jurnal-foto img:hover {
+  transform: scale(1.05);                  /* zoom ringan saat hover */
+}
+
+/* ===== Responsif: untuk tablet & HP ===== */
+@media (max-width: 900px) {
+  .jurnal-foto {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom kalau layar kecil */
+  }
+}
+
+@media (max-width: 600px) {
+  .jurnal-foto {
+    grid-template-columns: 1fr;            /* 1 kolom kalau HP */
+  }
+}
+
