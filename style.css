@@ -467,3 +467,16 @@ img {
   max-width: 90%;
   max-height: 90%;
 }
+.pembimbing-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pembimbing-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
