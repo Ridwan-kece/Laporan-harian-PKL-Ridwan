@@ -60,14 +60,5 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 function showMinggu(nomor) {
-  const semuaMinggu = document.querySelectorAll(".minggu");
-
-  semuaMinggu.forEach(m => {
-    m.style.display = "none";
-  });
-
-  const target = document.getElementById("minggu" + nomor);
-  if (target) {
-    target.style.display = "block";
-  }
+  alert("JS jalan, klik Minggu " + nomor);
 }
