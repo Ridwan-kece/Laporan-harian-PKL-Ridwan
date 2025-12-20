@@ -1,3 +1,4 @@
+alert("JS KELOAD");
 <script>
 function scrollToMinggu(minggu) {
     const row = document.getElementById('minggu' + minggu);
