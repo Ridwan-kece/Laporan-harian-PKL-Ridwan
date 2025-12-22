@@ -503,6 +503,21 @@
 </div>
 
 <script>
+window.onload = function() {
+  // sembunyikan semua minggu awalnya
+  var semuaMinggu = document.querySelectorAll(".minggu");
+  for (var i = 0; i < semuaMinggu.length; i++) {
+    semuaMinggu[i].style.display = "none";
+  }
+
+  // tampilkan Minggu 1 default
+  var tampil = document.getElementById("minggu1");
+  if (tampil) {
+    tampil.style.display = "block";
+  }
+}
+
+// fungsi showMinggu harus di luar window.onload supaya tombol bisa manggil
 function showMinggu(nomor) {
   var semuaMinggu = document.querySelectorAll(".minggu");
   for (var i = 0; i < semuaMinggu.length; i++) {
