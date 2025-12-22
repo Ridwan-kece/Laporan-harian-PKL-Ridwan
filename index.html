@@ -506,6 +506,21 @@
     }
 </script>
 
+<script>
+function showMinggu(nomor) {
+  // Sembunyikan semua minggu
+  var semuaMinggu = document.querySelectorAll(".minggu");
+  for (var i = 0; i < semuaMinggu.length; i++) {
+    semuaMinggu[i].style.display = "none";
+  }
+  // Tampilkan minggu yang dipilih
+  var tampil = document.getElementById("minggu" + nomor);
+  if (tampil) {
+    tampil.style.display = "block";
+  }
+}
+</script>
+
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img id="lightbox-img">

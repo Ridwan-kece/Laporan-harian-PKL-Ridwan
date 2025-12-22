@@ -63,20 +63,3 @@ function closeModal() {
 function showMinggu(nomor) {
   alert("JS jalan, klik Minggu " + nomor);
 }
-<div class="tab-minggu">
-  <button onclick="showMinggu(1)">Minggu 1</button>
-  <button onclick="showMinggu(2)">Minggu 2</button>
-  <button onclick="showMinggu(3)">Minggu 3</button>
-  <button onclick="showMinggu(4)">Minggu 4</button>
-</div>
-function showMinggu(nomor) {
-  alert("Klik Minggu " + nomor);
-  var semuaMinggu = document.querySelectorAll(".minggu");
-  for (var i = 0; i < semuaMinggu.length; i++) {
-    semuaMinggu[i].style.display = "none";
-  }
-  var tampil = document.getElementById("minggu" + nomor);
-  if (tampil) {
-    tampil.style.display = "block";
-  }
-}
