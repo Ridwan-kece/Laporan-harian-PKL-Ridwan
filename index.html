@@ -384,7 +384,7 @@
 <!-- =============== END RINGKASAN MINGGU 1 =============== -->
 
   <!-- MINGGU 2 -->
- <div class="minggu" id="minggu2" style="display:none;">
+ <div class="minggu" id="minggu2">
   <h3>Minggu 2</h3>
   <article class="jurnal-day">
   <h3>Day 6 – Membuat Aplikasi berbasis web</h3>
@@ -503,21 +503,6 @@
 </div>
 
 <script>
-window.onload = function() {
-  // sembunyikan semua minggu awalnya
-  var semuaMinggu = document.querySelectorAll(".minggu");
-  for (var i = 0; i < semuaMinggu.length; i++) {
-    semuaMinggu[i].style.display = "none";
-  }
-
-  // tampilkan Minggu 1 default
-  var tampil = document.getElementById("minggu1");
-  if (tampil) {
-    tampil.style.display = "block";
-  }
-}
-
-// fungsi showMinggu harus di luar window.onload supaya tombol bisa manggil
 function showMinggu(nomor) {
   var semuaMinggu = document.querySelectorAll(".minggu");
   for (var i = 0; i < semuaMinggu.length; i++) {
