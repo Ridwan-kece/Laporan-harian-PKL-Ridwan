@@ -60,6 +60,4 @@ function openModal(src) {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
-function showMinggu(nomor) {
-  alert("JS jalan, klik Minggu " + nomor);
-}
+
