@@ -659,3 +659,9 @@ nav a {
     justify-content: flex-start;
   }
 }
+.container {
+  padding: 16px;
+}
+.card {
+  padding: 16px;
+}
