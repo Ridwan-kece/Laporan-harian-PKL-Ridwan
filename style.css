@@ -1,3 +1,7 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -624,5 +628,31 @@ a:hover {
 
   .container {
     padding: 12px;
+  }
+}
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap; /* INI KUNCI */
+  justify-content: center;
+  padding: 8px;
+  gap: 8px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  white-space: nowrap; /* biar teks menu ga pecah */
+}
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: flex-start;
   }
 }
