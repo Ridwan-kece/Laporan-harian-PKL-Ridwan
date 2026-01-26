@@ -660,8 +660,15 @@ nav a {
   }
 }
 .container {
-  padding: 16px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
 .card {
-  padding: 16px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-left: 4px;
 }
